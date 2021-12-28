@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Favorite"
+        android:id="@+id/fav"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+
+    <item android:title="Profile"
+        android:id="@+id/profile"/>
+
+    <item android:title="Log Out"
+        android:id="@+id/logout"
+        />
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:title="Search"
+        android:id="@+id/search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_search_24"/>
+
+    <item android:title="Add Book"
+        android:id="@+id/addbook"/>
+    ic_baseline_search_24
+</menu>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".fragments.BookDetails">
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/imageView212123"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetails"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        />
+
+    <TextView
+        android:id="@+id/bookDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:text="Book Details"
+        android:textColor="#F3AF28"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit"
+        android:text="Name :"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetails" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit"
+
+        android:textSize="16dp"
+        android:text="Author :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView212123"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="105dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Year :"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView212123" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="13dp"
+        android:text="Category :"
+        android:background="@drawable/edit"
+
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView212123"
+        app:layout_constraintStart_toEndOf="@+id/imageView212123"
+        app:layout_constraintTop_toBottomOf="@+id/author"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="105dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Description :"
+        android:textSize="16dp"
+        android:background="@drawable/edit"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="105dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:text="Language :"
+        android:background="@drawable/edit"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/numOfPage"
+        android:layout_width="105dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:text="Num Of Page :"
+        android:background="@drawable/edit"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language" />
+
+    <TextView
+        android:id="@+id/copes"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:text="Copies :"
+        android:background="@drawable/edit"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numOfPage" />
+
+    <TextView
+        android:id="@+id/shelf"
+        android:layout_width="105dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Shelf :"
+        android:textSize="16dp"
+        android:background="@drawable/edit"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copes" />
+
+    <EditText
+        android:id="@+id/txtName4"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="72dp"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAuthor32323"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtName4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/txtName4" />
+
+    <EditText
+        android:id="@+id/txtYear"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/year"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <EditText
+        android:id="@+id/txtCategory"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAuthor32323"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtAuthor32323"
+        app:layout_constraintTop_toBottomOf="@+id/txtAuthor32323" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear" />
+
+    <EditText
+        android:id="@+id/txtLanguage"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/language"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <EditText
+        android:id="@+id/txtNum"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/numOfPage"
+        app:layout_constraintTop_toBottomOf="@+id/txtLanguage" />
+
+    <EditText
+        android:id="@+id/txtCopy"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/copes"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum" />
+
+    <EditText
+        android:id="@+id/txtShelf"
+        android:layout_width="75dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/shelf"
+        app:layout_constraintTop_toBottomOf="@+id/txtCopy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
